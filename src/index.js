@@ -9,7 +9,7 @@ import theme from "./mui/theme";
 import { ThemeProvider } from "@emotion/react";
 
 const client = new ApolloClient({
-  uri: "https://api-us-west-2.hygraph.com/v2/clnh5zfha6jb001ujg67c1ime/master",
+  uri: process.env.REACT_APP_GRAPHCMS_URI,
   cache: new InMemoryCache(),
 });
 
